@@ -22,6 +22,7 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $promotionImageUrl
  * @property \DTS\eBaySDK\Marketing\Enums\PromotionStatusEnum $promotionStatus
  * @property string $startDate
+ * @property \DTS\eBaySDK\Marketing\Enums\PromotionTypeEnum $promotionType
  */
 class ItemPromotion extends \DTS\eBaySDK\Types\BaseType
 {
@@ -88,6 +89,12 @@ class ItemPromotion extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'startDate'
+        ],
+        'promotionType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'promotionType'
         ]
     ];
 

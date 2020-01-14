@@ -31,7 +31,7 @@ class MarketingService extends \DTS\eBaySDK\Marketing\Services\MarketingBaseServ
         ],
         'BulkCreateAdsByListingID' => [
             'method' => 'POST',
-            'resource' => 'campaign/{campaign_id}/bulk_create_ads_by_listing_id',
+            'resource' => 'ad_campaign/{campaign_id}/bulk_create_ads_by_listing_id',
             'responseClass' => '\DTS\eBaySDK\Marketing\Types\BulkCreateAdsByListingIDRestResponse',
             'params' => [
                 'campaign_id' => [
@@ -42,7 +42,7 @@ class MarketingService extends \DTS\eBaySDK\Marketing\Services\MarketingBaseServ
         ],
         'BulkDeleteAdsByInventoryReference' => [
             'method' => 'POST',
-            'resource' => 'campaign/{campaign_id}/bulk_delete_ads_by_inventory_reference',
+            'resource' => 'ad_campaign/{campaign_id}/bulk_delete_ads_by_inventory_reference',
             'responseClass' => '\DTS\eBaySDK\Marketing\Types\BulkDeleteAdsByInventoryReferenceRestResponse',
             'params' => [
                 'campaign_id' => [
@@ -53,7 +53,7 @@ class MarketingService extends \DTS\eBaySDK\Marketing\Services\MarketingBaseServ
         ],
         'BulkDeleteAdsByListingID' => [
             'method' => 'POST',
-            'resource' => 'campaign/{campaign_id}/bulk_delete_ads_by_listing_id',
+            'resource' => 'ad_campaign/{campaign_id}/bulk_delete_ads_by_listing_id',
             'responseClass' => '\DTS\eBaySDK\Marketing\Types\BulkDeleteAdsByListingIDRestResponse',
             'params' => [
                 'campaign_id' => [
@@ -490,7 +490,7 @@ class MarketingService extends \DTS\eBaySDK\Marketing\Services\MarketingBaseServ
         'CreateReportTask' => [
             'method' => 'POST',
             'resource' => 'ad_report_task',
-            'responseClass' => '\DTS\eBaySDK\Marketing\Types\CreateReportTasktRestResponse',
+            'responseClass' => '\DTS\eBaySDK\Marketing\Types\CreateReportTaskRestResponse',
             'params' => [
             ]
         ],
@@ -1233,7 +1233,7 @@ class MarketingService extends \DTS\eBaySDK\Marketing\Services\MarketingBaseServ
 
     /**
      * @param \DTS\eBaySDK\Marketing\Types\CreateReportTaskRestRequest $request
-     * @return \DTS\eBaySDK\Marketing\Types\CreateReportTasktRestResponse
+     * @return \DTS\eBaySDK\Marketing\Types\CreateReportTaskRestResponse
      */
     public function createReportTask(\DTS\eBaySDK\Marketing\Types\CreateReportTaskRestRequest $request)
     {
